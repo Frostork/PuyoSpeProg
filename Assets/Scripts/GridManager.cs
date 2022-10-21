@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Grid : MonoBehaviour
+public class GridManager : MonoBehaviour
 {
     [SerializeField] public int height;
     [SerializeField] public int width;

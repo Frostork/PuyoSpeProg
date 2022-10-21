@@ -12,7 +12,7 @@ public class PuyoManager : MonoBehaviour
 
     public List<Vector2> movements;
 
-    public Grid grid;
+    public GridManager gridManager;
     public int index;
 
     private void Start()
