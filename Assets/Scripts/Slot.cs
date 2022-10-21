@@ -13,4 +13,12 @@ public class Slot : MonoBehaviour
     {
         slotPos = transform.position;
     }
+
+    private void Update()
+    {
+        if (puyo.puyoPos == slotPos)
+        {
+            isOccuped = true;
+        }
+    }
 }

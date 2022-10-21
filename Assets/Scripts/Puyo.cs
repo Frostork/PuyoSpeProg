@@ -16,8 +16,9 @@ public class Puyo : MonoBehaviour
 
     [Header("Movement")]
     [SerializeField] public float timeBeforeMove;
+    [SerializeField] public bool canMove;
     public List<Vector2> movements;
-    public GridManager gridManager;
+    public GameManager gameManager;
     
     private void Start()
     {
@@ -29,17 +30,9 @@ public class Puyo : MonoBehaviour
     {
         timeBeforeMove += Time.deltaTime;
 
-        if (Input.GetKeyDown(KeyCode.Q))
-            Moving(movements[1]);
-        
-        if (Input.GetKeyDown(KeyCode.D))
-            Moving(movements[2]);
-         
-
         if (timeBeforeMove >= 0.7f)
         {
-            Moving(movements[0]);
-            timeBeforeMove = 0;
+            canMove = true;
         }
 
     }
@@ -49,9 +42,5 @@ public class Puyo : MonoBehaviour
         Random r = new Random();
         color = r.Next(0, 5);
         _spriteRenderer.sprite = state[color];
-    }
-    private void Moving(Vector3 movement)
-    {
-        
     }
 }
