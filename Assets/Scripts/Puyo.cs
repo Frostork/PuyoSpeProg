@@ -1,23 +1,28 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
+using System.Collections.Generic;using Unity.VisualScripting;
 using Unity.VisualScripting.ReorderableList;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using Random = System.Random;
 
-public class PuyoManager : MonoBehaviour
+public class Puyo : MonoBehaviour
 {
-    [SerializeField] private List<Sprite> _states;
+    [Header("Init Variables")]
+    [SerializeField] public Vector2 puyoPos;
+    [SerializeField] public int color;
+    [SerializeField] private SpriteRenderer _spriteRenderer;
+    [SerializeField] private List<Sprite> state;
+
+    [Header("Movement")]
     [SerializeField] public float timeBeforeMove;
-
     public List<Vector2> movements;
-
     public GridManager gridManager;
-    public int index;
-
+    
     private void Start()
     {
-        
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+        InitColor();
     }
 
     private void Update()
@@ -36,10 +41,17 @@ public class PuyoManager : MonoBehaviour
             Moving(movements[0]);
             timeBeforeMove = 0;
         }
+
     }
 
+    public void InitColor()
+    {
+        Random r = new Random();
+        color = r.Next(0, 5);
+        _spriteRenderer.sprite = state[color];
+    }
     private void Moving(Vector3 movement)
     {
-        transform.position += movement;
+        
     }
 }
