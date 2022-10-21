@@ -15,6 +15,10 @@ public class Grid : MonoBehaviour
     {
         grid = new int[height,width];
         GridSetup();
+    }
+
+    private void Update()
+    {
         ShowGrid();
     }
 
@@ -25,11 +29,14 @@ public class Grid : MonoBehaviour
             for (int x = 0; x < width; x++)
             {
                 
-                Instantiate(puyos[0], new Vector3(x+offSet.x, y+offSet.y, 0), Quaternion.identity);
+                //Instantiate(puyos[0], new Vector3(x+offSet.x, y+offSet.y, 0), Quaternion.identity);
             }
         }
     }
 
+    
+    
+    // Dans la console
     private void ShowGrid()
     {
         string gridShow = "GRID : \n";

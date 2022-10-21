@@ -115,3 +115,8 @@ MonoBehaviour:
   - {fileID: 980999489, guid: 72ae78dc796ca12468fd4e7fc32b26ef, type: 3}
   - {fileID: -473623345, guid: 72ae78dc796ca12468fd4e7fc32b26ef, type: 3}
   - {fileID: -746090055, guid: 72ae78dc796ca12468fd4e7fc32b26ef, type: 3}
+  timeBeforeMove: 0
+  movements:
+  - {x: 0, y: 1}
+  - {x: -1, y: 0}
+  - {x: 1, y: 0}

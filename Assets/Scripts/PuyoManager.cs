@@ -12,21 +12,29 @@ public class PuyoManager : MonoBehaviour
 
     public List<Vector2> movements;
 
+    public Grid grid;
+    public int index;
+
+    private void Start()
+    {
+        
+    }
+
     private void Update()
     {
-        timeBeforeMove -= Time.deltaTime;
+        timeBeforeMove += Time.deltaTime;
 
         if (Input.GetKeyDown(KeyCode.Q))
-        {
             Moving(movements[1]);
-        }
+        
         if (Input.GetKeyDown(KeyCode.D))
-        {
             Moving(movements[2]);
-        }
-        if (timeBeforeMove <= 0)
+         
+
+        if (timeBeforeMove >= 0.7f)
         {
             Moving(movements[0]);
+            timeBeforeMove = 0;
         }
     }
 
@@ -34,5 +42,4 @@ public class PuyoManager : MonoBehaviour
     {
         transform.position += movement;
     }
-    
 }
