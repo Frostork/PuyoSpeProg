@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Puyo")] 
     
-    [SerializeField] private List<GameObject> puyos;
+    [SerializeField] public List<GameObject> puyos;
     private GameObject _actifPuyo;
     [SerializeField] private bool _canInvoke;
     [SerializeField] public float timeBeforeMove;
@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
 
     private void SpawnPuyo()
     {

@@ -7,18 +7,21 @@ public class Slot : MonoBehaviour
 {
     [SerializeField] public Vector2 slotPos;
     [SerializeField] public bool isOccuped;
-    public Puyo puyo;
+    public GameManager gameManager;
 
     private void Start()
     {
         slotPos = transform.position;
     }
 
-    private void Update()
+    private void CheckSlot()
     {
-        if (puyo.puyoPos == slotPos)
+        foreach (var puyo in gameManager.puyos)
         {
-            isOccuped = true;
+            if (transform.position == puyo.GetComponent<Puyo>().puyoPos)
+            {
+                isOccuped = true;
+            }
         }
     }
 }

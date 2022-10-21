@@ -9,7 +9,7 @@ using Random = System.Random;
 public class Puyo : MonoBehaviour
 {
     [Header("Init Variables")]
-    [SerializeField] public Vector2 puyoPos;
+    [SerializeField] public Vector3 puyoPos;
     [SerializeField] public int color;
     [SerializeField] private SpriteRenderer _spriteRenderer;
     [SerializeField] private List<Sprite> state;
@@ -34,7 +34,6 @@ public class Puyo : MonoBehaviour
         {
             canMove = true;
         }
-
     }
 
     public void InitColor()
