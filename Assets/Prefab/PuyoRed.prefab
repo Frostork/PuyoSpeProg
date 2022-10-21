@@ -97,3 +97,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22f84357b083c2443bf6cf43a8e882d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _states:
+  - {fileID: -607940621, guid: 72ae78dc796ca12468fd4e7fc32b26ef, type: 3}
+  - {fileID: 244196541, guid: 72ae78dc796ca12468fd4e7fc32b26ef, type: 3}
+  - {fileID: 1780867838, guid: 72ae78dc796ca12468fd4e7fc32b26ef, type: 3}
+  - {fileID: 250198536, guid: 72ae78dc796ca12468fd4e7fc32b26ef, type: 3}
+  - {fileID: 1789997961, guid: 72ae78dc796ca12468fd4e7fc32b26ef, type: 3}
+  - {fileID: 1498579202, guid: 72ae78dc796ca12468fd4e7fc32b26ef, type: 3}
+  - {fileID: -142045359, guid: 72ae78dc796ca12468fd4e7fc32b26ef, type: 3}
+  - {fileID: -526174279, guid: 72ae78dc796ca12468fd4e7fc32b26ef, type: 3}
+  - {fileID: -1592855545, guid: 72ae78dc796ca12468fd4e7fc32b26ef, type: 3}
+  - {fileID: -2020206967, guid: 72ae78dc796ca12468fd4e7fc32b26ef, type: 3}
+  - {fileID: 1404573076, guid: 72ae78dc796ca12468fd4e7fc32b26ef, type: 3}
+  - {fileID: -837227825, guid: 72ae78dc796ca12468fd4e7fc32b26ef, type: 3}
+  - {fileID: 422822522, guid: 72ae78dc796ca12468fd4e7fc32b26ef, type: 3}
+  - {fileID: 1199320612, guid: 72ae78dc796ca12468fd4e7fc32b26ef, type: 3}
+  - {fileID: 980999489, guid: 72ae78dc796ca12468fd4e7fc32b26ef, type: 3}
+  - {fileID: -473623345, guid: 72ae78dc796ca12468fd4e7fc32b26ef, type: 3}
+  - {fileID: -746090055, guid: 72ae78dc796ca12468fd4e7fc32b26ef, type: 3}
